@@ -620,7 +620,7 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
     _timeLabel.textAlignment = NSTextAlignmentCenter;
     _timeLabel.text = @"09:41";
     _timeLabel.textColor = [UIColor whiteColor];
-    _timeLabel.font = [UIFont systemFontOfSize:90 weight:UIFontWeightUltraLight];
+    _timeLabel.font = [UIFont systemFontOfSize:80 weight:UIFontWeightThin];
     
     // date label
     _dateLabel = [UILabel new];
@@ -632,8 +632,8 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
     
     CGRect screenBound = self.view.bounds;
     CGFloat screenWidth = screenBound.size.width;
-    _timeLabel.frame = CGRectMake(0, 90, screenWidth , 90);
-    _dateLabel.frame = CGRectMake(0, 180, screenWidth , 40);
+    _timeLabel.frame = CGRectMake(0, 90, screenWidth , 80);
+    _dateLabel.frame = CGRectMake(0, 170, screenWidth , 40);
     
     // Close Button
     _doneButton = [UIButton buttonWithType:UIButtonTypeCustom];

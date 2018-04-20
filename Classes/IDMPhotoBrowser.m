@@ -710,6 +710,7 @@ NSLocalizedStringFromTableInBundle((key), nil, [NSBundle bundleWithPath:[[NSBund
                                                                       target:self
                                                                       action:@selector(actionButtonPressed:)];
     }
+    _actionButton.tintColor = [UIColor whiteColor];
     
     // Gesture
     _panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognized:)];
